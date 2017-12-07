@@ -1,0 +1,16 @@
+Test patch 2
+
+Signed-off-by: Kun Ma <kun.ma@citrix.com>
+
+diff --git a/guestmetric/guestmetric_linux.go b/guestmetric/guestmetric_linux.go
+index 7578091..60411f2 100644
+--- a/guestmetric/guestmetric_linux.go
++++ b/guestmetric/guestmetric_linux.go
+@@ -53,6 +53,7 @@ func (c *Collector) CollectMisc() (GuestMetric, error) {
+ 	current["attr/PVAddons/BuildVersion"] = "@NUMERIC_BUILD_NUMBER@"
+ 	current["attr/PVAddons/Joke"] = "It's a joke"
+ 	current["attr/PVAddons/Joke2"] = "It's a joke again"
++	current["attr/PVAddons/Joke3"] = "Full of joks"
+ 
+ 	return current, nil
+ }
